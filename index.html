@@ -1,13 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/style.scss" />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <div class="wrapper">
+      <main class="main">
+        <article class="hero">
+          <div class="container">
+            <div class="hero__header">
+              <h2 class="title">Bienvenidos a la Fiesta Neón</h2>
+              <nav class="nav">
+                <ul>
+                  <li><a href="">Inicio</a></li>
+                  <li><a href="">Sobre el Evento</a></li>
+                  <li><a href="">Programa</a></li>
+                  <li><a href="">Registro</a></li>
+                  <li><a href="">Contacto</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="hero__rules">
+              <p class="hero__text">Por primera vez en Barcelona</p>
+              <p class="hero__text">Dress code: ropa UV-reactiva</p>
+            </div>
+            <h2 class="title bottom">Donde el futuro brilla con luz propia </h2>
+          </div>
+        </article>
+      </main>
+    </div>
   </body>
 </html>
