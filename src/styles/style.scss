@@ -23,7 +23,7 @@
     display: inline-block;
     border-radius: 15px;
     padding: 20px;
-    border: 3px dashed #CE3D70;
+    border: 3px dashed #ce3d70;
     max-width: 620px;
     color: #fff;
     font-size: 20px;
@@ -89,5 +89,52 @@
         }
       }
     }
+  }
+}
+
+.ticket {
+  position: relative;
+  padding-top: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__button {
+    margin-bottom: 190px;
+  }
+  &__title {
+    transition: all 250ms ease-in-out;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 50px;
+    line-height: 80%;
+    text-transform: uppercase;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    padding: 60px;
+    border: 1px blue solid;
+    background: linear-gradient(90deg, #b7eb29, #f44d88, #b7eb29);
+    background-size: 200% 100%;
+    background-position: 0% 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 3s ease-in-out infinite;
+
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  }
+  &__smile {
+    position: absolute;
+    top: 505px;
+    right: 477px;
   }
 }
