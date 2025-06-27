@@ -31,6 +31,8 @@ aside {
 
 html,
 body {
+  transition: all 0.5s ease-in-out;
+  scroll-behavior: smooth;
 background-color: #000000;
   height: 100%;
   width: 100%;
